@@ -14,9 +14,9 @@ const Details = ({ route }) => {
             .then(res => res.json())
             .then(data => setData(data))
             .catch(err => console.log(err))
+    },[])
 
-    }, [])
-
+    console.log(data)
    
     return (
         <View>
